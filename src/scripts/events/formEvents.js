@@ -17,7 +17,7 @@ const formEvents = (uid) => {
         author_id: document.querySelector('#author_id').value,
         uid
       };
-      createBook(bookObject, uid).then((booksArray) => showBooks(booksArray));
+      createBook(bookObject).then((booksArray) => showBooks(booksArray));
     }
 
     // TODO: CLICK EVENT FOR EDITING A BOOK
@@ -34,7 +34,7 @@ const formEvents = (uid) => {
         uid
       };
 
-      updateBook(bookObject, uid).then(showBooks);
+      updateBook(bookObject).then(showBooks);
     }
 
     // FIXME: ADD CLICK EVENT FOR SUBMITTING FORM FOR ADDING AN AUTHOR
@@ -45,7 +45,7 @@ const formEvents = (uid) => {
         email: document.querySelector('#email').value,
         uid
       };
-      createAuthor(authorObject, uid).then((authorArray) => showAuthors(authorArray));
+      createAuthor(authorObject).then((authorArray) => showAuthors(authorArray));
     }
     // FIXME:ADD CLICK EVENT FOR EDITING AN AUTHOR
     if (e.target.id.includes('update-author')) {
@@ -58,7 +58,7 @@ const formEvents = (uid) => {
         uid
       };
 
-      updateAuthor(authorObject, uid).then(showAuthors);
+      updateAuthor(authorObject).then(showAuthors);
     }
   });
 };

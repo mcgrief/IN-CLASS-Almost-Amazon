@@ -42,7 +42,7 @@ In preparation for next week, complete the following in lab:
   - Go to the application it should look like this:
  
   <img src="documentation/Login Screen.png" alt="Login Screen" width="300px"/>
- 
+
   - The API key error should also be gone
   - Clicking the button should open up a Google Popup. Select a user to sign in with.
 
